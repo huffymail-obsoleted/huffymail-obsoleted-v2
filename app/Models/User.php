@@ -41,4 +41,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isAdmin(): bool
+    {
+        return $this->authority_level >= 4;
+    }
+
+    public function isOwner(): bool
+    {
+        return $this->authority_level >= 3;
+    }
+
+    public function isEditor(): bool
+    {
+        return $this->authority_level >= 2;
+    }
 }
