@@ -11,7 +11,7 @@ export default function Welcome ({ version }: Props) {
         <title>Laravel</title>
       </Head>
 
-      <div>
+      <div className="p-4">
         <p>Welcome to Laravel v{version}</p>
       </div>
     </section>
