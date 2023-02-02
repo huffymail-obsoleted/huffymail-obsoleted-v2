@@ -2,8 +2,8 @@ import { Head } from '@inertiajs/react'
 import { router } from '@inertiajs/react'
 import { Field, withTypes } from 'react-final-form'
 
-import { Header } from '../Components/Molecules/Header'
-import { makeInboxUrl } from '../Utilities/urls'
+import { Header } from '../components/molecules/header'
+import { makeInboxUrl } from '../utils/urls'
 
 export default function Welcome () {
   return (
